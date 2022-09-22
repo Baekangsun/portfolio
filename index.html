@@ -5,15 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <script defer="" src="main.js"></script>
-  <link href="common.css" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <div class="wrap">
       <div class="gnb">
-        <a href="#home">Home</a>
+        <a href="#visual">Home</a>
         <a href="#about_me">About me</a>
         <a href="#works">Works</a>
         <a href="#contact">Contact</a>
@@ -21,14 +19,14 @@
     </div>
   </header>
   <main>
-    <section id="home" class="visual">
-      <div class="particle">
-        <div class="blue"></div>
-        <div class="gray"></div>
-        <div class="red"></div>
+    <section id="visual" class="visual">
+      <div class="parallax">
+        <div class="blue" data-offset="30"></div>
+        <div class="gray" data-offset="60"></div>
+        <div class="red" data-offset="90"></div>
       </div>
       <div class="wrap">
-        <div class="title">
+        <div class="visual_title">
           <div>
             <h1>HELLO<apsn class="dot">.</apsn>
             </h1>
@@ -43,14 +41,26 @@
         </div>
       </div>
     </section>
-    <section id="about_me" class="about_me" style="width: 1100px;">
-      <div class="about_me_bg"></div>
+    <section id="about_me" class="about_me">
       <div class="wrap">
-        <h2 style="width:100%; height:900px; background:#000">dasㅇㅁㄴㅇ</h2>
+        <h1 class="title">ABOUT ME</h1>
+        <h2 class="sub_title">I Am a Web Publisher <br>
+          And Front end.</h2>
+        <p class="tit_text">안녕하세요. 언제나 새로운 도전을 하는 것을 즐기는 배강선입니다.</p>
+        <p class="tit_text">저는 실용적이면서도 보기 좋은 사용자 친화적 웹사이트의 디자인을 추구하며
+        </p>
+        <p class="tit_text">언제나 웹 접근성, 웹 표준성에 적합하게 개발하려 노력합니다.</p>
+        <div class="more_btn">
+          <a href="#">
+            <p>VIEW MORE INTRO. <span class="plus">+</span></p>
+          </a>
+        </div>
       </div>
     </section>
-    <section id="works" class="works"></section>
-    <section id="contact" class=""></section>
+    <section id="works" class="works">
+      <div class="wrap"></div>
+    </section>
+    <section id="contact" class="contact"></section>
   </main>
 </body>
 
