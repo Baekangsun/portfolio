@@ -1,5 +1,6 @@
 ////////////////////////////////// section active
-import './style.css';
+// import './css/style.css';
+// import '../css/style.css';
 
 ////////////////////////////////// common 변수
 let windoW;
@@ -96,5 +97,12 @@ window.addEventListener('scroll', () => {
     aboutMe.style.width = 1100 + 'px'
     wroks.style.width = 1100 + 'px'
   }
+})
+////////////////////////////////// works project show click Event
+
+let showEl = document.querySelector('.project2')
+let btnEl = document.querySelector('#works .btn_wrap')
+btnEl.addEventListener('click', () => {
+  console.log('asdsd')
 })
 
