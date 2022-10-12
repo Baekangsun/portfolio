@@ -1,0 +1,239 @@
+/***************************** visual */
+.visual {
+  width: 100%;
+  height: 100vh;
+}
+
+.visual .wrap {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/***************************** visual parallax */
+
+.parallax {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax .blue,
+.parallax .gray,
+.parallax .red {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.parallax .blue {
+  background: url('../img/particle_blue.png') no-repeat center;
+}
+
+.parallax .gray {
+  background: url('../img/particle_gray.png');
+}
+
+.parallax .red {
+  background: url('../img/particle_red.png');
+}
+
+/***************************** visual title */
+.visual_title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.visual_title h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+.visual_title h1.stroke {
+  color: #313131;
+  -webkit-text-stroke: 3px var(--orange)
+}
+
+.visual_title h1 .dot {
+  margin-left: 5px;
+  color: var(--red);
+}
+
+/***************************** visual scroll */
+.scroll {
+  height: 50px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.scroll .scroll_txt {
+  font-size: 14px;
+  color: #aaa;
+  padding-bottom: 20px;
+}
+
+@keyframes upDown {
+  10% {
+    margin-top: 0px;
+  }
+
+  50% {
+    margin-top: 10px;
+  }
+
+  100% {
+    margin-top: 0px;
+  }
+}
+
+.scroll .scroll_img {
+  width: 16px;
+  height: 8px;
+  margin: 0 auto;
+  background: url(../img/scrollArrow.png);
+  animation: upDown 3s ease-out infinite alternate;
+}
+
+/***************************** about_me */
+.about_me {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: -70px;
+  background: #fff;
+  padding: 140px 0;
+}
+
+.about_me .wrap {
+  text-align: center;
+}
+
+.about_me .tit_text {
+  line-height: 30px;
+  color: #999;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+/***************************** works */
+.works {
+  margin: 0 auto;
+  padding-bottom: 140px;
+  background: #fff;
+}
+
+.works .sub_title {
+  padding: 20px 0 50px 0;
+}
+
+/***************************** works project*/
+.works .project_wrap:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.works .project_wrap .project {
+  float: left;
+  width: 530px;
+  height: 460px;
+  padding: 80px 0 0 60px;
+  box-sizing: border-box;
+  font-weight: 500;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+.works .project_wrap .project:nth-child(odd) {
+  margin-bottom: 40px;
+}
+
+.works .project_wrap .project:nth-child(even) {
+
+  float: right;
+  margin-top: 40px;
+}
+
+.works .project_wrap .starbucks {
+  background: #9c2236;
+}
+
+.works .project_wrap .touelesjoure {
+  background: #53fd95;
+  margin-top: 140px !important;
+}
+
+.works .project_wrap .nhn {
+  background: #0011ac;
+}
+
+.works .project_wrap .kakao {
+  background: #a2d8ce;
+}
+
+.works .project_wrap .project .verstion {
+  font-size: 16px;
+}
+
+.works .project_wrap .project .project_title {
+  padding: 20px 0 75px 0;
+  font-size: 26px;
+}
+
+.works .project_wrap .project .project_img {
+  display: block;
+  width: 420px;
+  height: 250px;
+  box-shadow: 0 0 15px #333;
+  position: absolute;
+  bottom: 0;
+}
+
+/***************************** works project content_more_btn*/
+
+.works .project_wrap .content_more_btn {
+  width: 95%;
+  height: 95%;
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.works .project_wrap .content_more_btn:hover {
+  opacity: 1;
+  transition: 0.7s;
+}
+
+.works .project_wrap .content_more_btn .cont_link {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #313131;
+  opacity: 0.8;
+}
+
+.works .project_wrap .content_more_btn .more_txt {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 18px;
+}
+
+/***************************** works section_more_btn*/
+.works .section_more_btn {
+  margin-top: 100px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
