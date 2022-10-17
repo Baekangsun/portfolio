@@ -1,8 +1,6 @@
 /***************************** fonts  */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
-/* @import url('../public/img/parallax_blue.png'); */
-
 /***************************** reset */
 * {
   margin: 0;
@@ -37,7 +35,6 @@ body {
 }
 
 /***************************** title */
-
 .title {
   color: var(--orange);
   font-size: 22px;
@@ -51,49 +48,8 @@ body {
   font-weight: 700;
 }
 
-/***************************** btn */
-.section_more_btn {
-  display: inline-block;
-  margin-top: 40px;
-}
-
-.section_more_btn .btn_wrap {
-  display: block;
-  width: 100%;
-  border-radius: 50px;
-  background: #fff;
-  position: relative;
-  z-index: 1;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.section_more_btn .btn_wrap:after {
-  content: "";
-  width: 100%;
-  height: 100%;
-  border-radius: 50px;
-  background-color: #f1f1f1;
-  position: absolute;
-  top: 0;
-  left: -180px;
-  z-index: -1;
-  transition: .5s cubic-bezier(.55, .3, 0, .99);
-}
-
-.section_more_btn .btn_wrap:hover:after {
-  left: 180px;
-}
-
-.section_more_btn .btn_wrap p {
-  padding: 15px 20px;
-  font-size: 14px;
-  font-weight: 500;
-  color: 313131;
-}
-
-.section_more_btn .btn_wrap p .plus {
-  padding-left: 50px;
+.dot {
+  color: var(--red);
 }
 
 /***************************** header */
@@ -157,6 +113,83 @@ header .gnb a.active:after {
   background: var(--red);
 }
 
+
+
+
+
+
+
+
+
+
+/***************************** visual */
+.visual {
+  width: 100%;
+  height: 100vh;
+}
+
+/***************************** visual parallax */
+.parallax {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax .blue,
+.parallax .gray,
+.parallax .red {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/***************************** visual title */
+.visual .wrap {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual_title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.visual_title h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+/***************************** about_me */
+.about_me {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: -70px;
+  background: #fff;
+  padding: 140px 0;
+}
+
+.about_me .wrap {
+  text-align: center;
+}
+
+.about_me .tit_text {
+  line-height: 30px;
+  color: #999;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+
+
+
+
 /***************************** footer*/
 
 footer .contact {
@@ -168,7 +201,6 @@ footer .contact {
 footer .contact .contcat_title {
   float: left;
   width: 50%;
-  margin-top: 20px;
   font-size: 32px;
 }
 

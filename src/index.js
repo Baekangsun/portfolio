@@ -1,7 +1,3 @@
-////////////////////////////////// section active
-// import './css/style.css';
-// import '../css/style.css';
-
 ////////////////////////////////// common 변수
 let windoW;
 let windoH;
