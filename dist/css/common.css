@@ -1,0 +1,245 @@
+/***************************** fonts  */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/***************************** reset */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  list-style: none;
+  color: inherit;
+  text-decoration: none;
+  font-family: "Noto Sans KR", "Roboto", sans-serif;
+}
+
+/***************************** common */
+html,
+body {
+  background: #313131;
+  overflow-x: hidden;
+}
+
+/***************************** color */
+:root {
+  --orange: #e8ba4d;
+  --red: #a8393f;
+}
+
+/***************************** wrap */
+.wrap {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/***************************** title */
+.title {
+  color: var(--orange);
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sub_title {
+  padding: 40px 0;
+  color: #313131;
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.dot {
+  color: var(--red);
+}
+
+/***************************** header */
+header {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  right: 100px;
+  z-index: 9999;
+}
+
+header .wrap {
+  width: 100%;
+}
+
+header .gnb {
+  float: right;
+  padding: 28px 0;
+  color: #fff;
+  transition: all 0.3s;
+}
+
+header .gnb a {
+  float: left;
+  padding: 0 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+header .gnb a:after {
+  content: "";
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background: var(--red);
+  transition: all 0.3s;
+}
+
+header .gnb a:hover {
+  color: var(--orange);
+}
+
+header .gnb a:hover:after {
+  width: 6px;
+  height: 6px;
+}
+
+header .gnb a.active {
+  color: var(--orange);
+}
+
+header .gnb a.active:after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 5px;
+  border-radius: 6px;
+  background: var(--red);
+}
+
+/***************************** visual */
+.visual {
+  width: 100%;
+  height: 100vh;
+}
+
+/***************************** visual parallax */
+.parallax {
+  width: 100%;
+  height: 100%;
+}
+
+.parallax .blue,
+.parallax .gray,
+.parallax .red {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/***************************** visual title */
+.visual .wrap {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.visual_title {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.visual_title h1 {
+  font-size: 100px;
+  font-weight: 700;
+  color: var(--orange);
+}
+
+/***************************** about_me */
+.about_me {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: -70px;
+  background: #fff;
+  padding: 140px 0;
+}
+
+.about_me .wrap {
+  text-align: center;
+}
+
+.about_me .tit_text {
+  line-height: 30px;
+  color: #999;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/***************************** footer*/
+
+footer .contact {
+  padding: 150px 0 100px 0;
+  color: #fff;
+  overflow: hidden;
+}
+
+footer .contact .contcat_title {
+  float: left;
+  width: 50%;
+  font-size: 32px;
+}
+
+footer .contact .contcat_title:before {
+  content: "";
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  background: var(--red);
+}
+
+footer .contact .contact_wrap {
+  float: left;
+  width: 50%;
+  font-size: 18px;
+}
+
+footer .contact .contact_wrap .contact_us .contcat_sub_title {
+  display: block;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+footer .contact .contact_wrap .contact_us a {
+  display: block;
+  padding: 12px 0;
+  color: var(--orange);
+  text-decoration: underline;
+}
+
+footer .contact .contact_wrap .explore .contcat_sub_title {
+  display: block;
+  margin: 70px 0 40px 0;
+  font-weight: 700;
+}
+
+footer .contact .contact_wrap .explore .navigation a {
+  padding-right: 50px;
+  color: #999;
+}
+
+footer .contact .contact_wrap .explore .navigation a:hover {
+  text-decoration: underline;
+}
+
+footer .copy {
+  width: 100%;
+  padding: 25px 0;
+  border-top: 1px solid #444;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+}
