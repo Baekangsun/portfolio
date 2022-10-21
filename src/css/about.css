@@ -16,16 +16,15 @@
 }
 
 .parallax .blue {
-  background: url('../img/sub_particle_blue.png') no-repeat center;
+  background: url("../img/sub_particle_blue.png") no-repeat center;
 }
 
 .parallax .gray {
-  background: url('../img/sub_particle_gray.png') no-repeat center;
+  background: url("../img/sub_particle_gray.png") no-repeat center;
 }
 
 .parallax .red {
-  background: url('../img/sub_particle_red.png') no-repeat center;
-
+  background: url("../img/sub_particle_red.png") no-repeat center;
 }
 
 /***************************** visual title */
@@ -39,7 +38,7 @@
 
 .visual_title h1 .stroke {
   color: #313131;
-  -webkit-text-stroke: 3px var(--orange)
+  -webkit-text-stroke: 3px var(--orange);
 }
 
 .visual_title p {
@@ -102,17 +101,15 @@
 }
 
 .about_me .service .design .ico {
-  background: url('../img/service.png') -50px 0 no-repeat;
+  background: url("../img/service.png") -50px 0 no-repeat;
 }
 
 .about_me .service .development .ico {
-  background: url('../img/service.png') 0 0 no-repeat;
-
+  background: url("../img/service.png") 0 0 no-repeat;
 }
 
 .about_me .service .others .ico {
-  background: url('../img/service.png') -100px 0 no-repeat;
-
+  background: url("../img/service.png") -100px 0 no-repeat;
 }
 
 .about_me .service .development {
@@ -198,11 +195,11 @@
 }
 
 .resume .profile .call:before {
-  background: url('../img/phone.png') no-repeat;
+  background: url("../img/phone.png") no-repeat;
 }
 
 .resume .profile .email:before {
-  background: url('../img/message.png') no-repeat;
+  background: url("../img/message.png") no-repeat;
 }
 
 /***************************** resume data */
@@ -245,7 +242,6 @@
   top: calc(50% - 4px);
 }
 
-
 .resume .data ul li .year {
   padding-right: 20px;
   margin-left: 20px;
@@ -255,7 +251,7 @@
 .resume .skill {
   float: left;
   width: 380px;
-  padding: 0 20px;
+  padding-left: 20px;
   box-sizing: border-box;
 }
 
@@ -284,6 +280,8 @@
   margin-top: 15px;
   background: #ccc;
   border-radius: 5px;
+  position: relative;
+  overflow: hidden;
 }
 
 .resume .skill ul li .skill_bar:after {
@@ -291,6 +289,13 @@
   display: block;
   height: 5px;
   border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: -100%;
+}
+.resume .skill ul li .skill_bar.on:after {
+  left: 0;
+  transition: all 3s;
 }
 
 .resume .skill ul .html .skill_bar:after {

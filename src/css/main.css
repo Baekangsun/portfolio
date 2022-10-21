@@ -25,7 +25,7 @@
   top: 0;
   left: -180px;
   z-index: -1;
-  transition: .5s cubic-bezier(.55, .3, 0, .99);
+  transition: 0.5s cubic-bezier(0.55, 0.3, 0, 0.99);
 }
 
 .section_more_btn .btn_wrap:hover:after {
@@ -52,21 +52,21 @@
 /***************************** visual parallax */
 
 .parallax .blue {
-  background: url('../img/particle_blue.png') no-repeat center;
+  background: url("../img/particle_blue.png") no-repeat center;
 }
 
 .parallax .gray {
-  background: url('../img/particle_gray.png') no-repeat center;
+  background: url("../img/particle_gray.png") no-repeat center;
 }
 
 .parallax .red {
-  background: url('../img/particle_red.png') no-repeat center;
+  background: url("../img/particle_red.png") no-repeat center;
 }
 
 /***************************** visual title */
 .visual_title h1.stroke {
   color: #313131;
-  -webkit-text-stroke: 3px var(--orange)
+  -webkit-text-stroke: 3px var(--orange);
 }
 
 /***************************** visual scroll */
@@ -106,9 +106,9 @@
   animation: upDown 3s ease-out infinite alternate;
 }
 
-
 /***************************** works */
 .works {
+  width: 1100px;
   margin: 0 auto;
   padding-bottom: 140px;
   background: #fff;
@@ -137,30 +137,67 @@
   overflow: hidden;
 }
 
+.works .project1 {
+  display: block;
+}
+
+.works .project2 {
+  display: none;
+}
+
+.works .project3 {
+  display: none;
+}
+
 .works .project_wrap .project:nth-child(odd) {
   margin-bottom: 40px;
 }
 
 .works .project_wrap .project:nth-child(even) {
-
   float: right;
   margin-top: 40px;
 }
 
 .works .project_wrap .starbucks {
-  background: #9c2236;
+  background: #704838;
 }
 
 .works .project_wrap .touelesjoure {
-  background: #53fd95;
+  background: #406252;
   margin-top: 140px !important;
 }
 
-.works .project_wrap .nhn {
-  background: #0011ac;
+.works .project_wrap .kakao {
+  background: #fae100;
 }
 
-.works .project_wrap .kakao {
+.works .project_wrap .jiran {
+  background: #ff7f00;
+}
+
+.works .project_wrap .bosung {
+  background: #38465b;
+  margin-top: -100px;
+}
+
+.works .project_wrap .komsco {
+  background: #665d53;
+}
+
+.works .project_wrap .nhn {
+  background: #ec4546;
+}
+
+.works .project_wrap .gallagher {
+  background: #a972c9;
+}
+
+.works .project_wrap .tetris {
+  background: #f97c6d;
+  margin-top: -100px;
+}
+
+.works .project_wrap .calculator {
   background: #a2d8ce;
 }
 
