@@ -4,6 +4,7 @@ body {
   background: #313131;
   overflow-x: hidden;
   font-family: "Noto Sans KR", "Roboto", sans-serif;
+  line-height: normal;
 }
 
 /***************************** color */

@@ -131,9 +131,7 @@ function fadeInActionEvent() {
   fadeInEls.forEach((fadeInEl) => {
     factory(fadeInEl);
   });
-  console.log(fadeInEls, "fadeInEls");
   function factory(el) {
-    console.log(el);
     const io = new IntersectionObserver(
       (entries) => {
         if (entries.some((entry) => entry.intersectionRatio > 0)) {
