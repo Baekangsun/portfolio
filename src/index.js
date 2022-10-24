@@ -126,42 +126,56 @@ skillBarEl.forEach((el) => {
     }
   });
 });
-
-// 스킬바가 화면에 보이면
+function fadeInActionEvent() {
+  const fadeInEls = document.querySelectorAll(".fade_in");
+  fadeInEls.forEach((fadeInEl) => {
+    factory(fadeInEl);
+  });
+  console.log(fadeInEls, "fadeInEls");
+  function factory(el) {
+    console.log(el);
+    const io = new IntersectionObserver(
+      (entries) => {
+        if (entries.some((entry) => entry.intersectionRatio > 0)) {
+          const delayTime = el.getAttribute("data-delay");
+          setTimeout(function () {
+            el.style.animation = "boxAnimate 1s cubic-bezier(0.35, 1.34, 0.43, 1.28)";
+            el.style.opacity = 1;
+          }, delayTime);
+        }
+      },
+      {
+        threshold: 0.2,
+      }
+    );
+    io.observe(el);
+    return io;
+  }
+}
 
 ////////////////////////////////////////////////////////////// commen
-window.addEventListener("load", function () {
-  window.addEventListener("scroll", function () {
-    //상단 header 메뉴 color 변경
-    gnbColorChange();
-  });
-  // visual 이미지 마우스무브 인터렉션
-  parallaxMouseMove();
-
-  switch (window.PORTFOLIO_PAGE) {
-    ////////////////////////////////////////////////////////////// main
-    case "main":
-      // work 더보기 기능
-      workMoreEvent();
-      aboutMeScrollBerak();
-      window.addEventListener("scroll", function () {
-        // about 배경 인터렉션 이벤트
-        aboutMeScrollEvent();
-        // 상단 gnb active style 변경
-        gnbStyleChange();
-      });
-      break;
-
-    ////////////////////////////////////////////////////////////// about
-    case "about":
-      // 스킬 바 애니메이션
-      skillBarAnimation();
-      break;
-
-    ////////////////////////////////////////////////////////////// work
-    case "work":
-      // 상단으로 이동하는 기능
-      topOfPage();
-      break;
-  }
+window.addEventListener("scroll", function () {
+  gnbColorChange(); //상단 header 메뉴 color 변경
 });
+parallaxMouseMove(); // visual 이미지 마우스무브 인터렉션
+fadeInActionEvent(); // fadein 애니메이션
+
+switch (window.PORTFOLIO_PAGE) {
+  ////////////////////////////////////////////////////////////// main
+  case "main":
+    workMoreEvent(); // work 더보기 기능
+    aboutMeScrollBerak();
+    window.addEventListener("scroll", function () {
+      aboutMeScrollEvent(); // about 배경 인터렉션 이벤트
+      gnbStyleChange(); // 상단 gnb active style 변경
+    });
+    break;
+  ////////////////////////////////////////////////////////////// about
+  case "about":
+    skillBarAnimation(); // 스킬 바 애니메이션
+    break;
+  ////////////////////////////////////////////////////////////// work
+  case "work":
+    topOfPage(); // 상단으로 이동하는 기능
+    break;
+}

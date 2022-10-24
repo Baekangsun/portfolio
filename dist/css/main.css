@@ -67,6 +67,7 @@
 .visual_title h1.stroke {
   color: #313131;
   -webkit-text-stroke: 3px var(--orange);
+  transition: 2s;
 }
 
 /***************************** visual scroll */
@@ -105,7 +106,6 @@
   background: url(../img/scrollArrow.png);
   animation: upDown 3s ease-out infinite alternate;
 }
-
 /***************************** works */
 .works {
   width: 1100px;

@@ -11,7 +11,7 @@
     <script>
       window.PORTFOLIO_PAGE = "work";
     </script>
-    <script src="../index.js"></script>
+    <script defer src="../index.js"></script>
   </head>
   <body>
     <header>
@@ -28,14 +28,14 @@
       <section class="gallagher">
         <div class="visual">
           <div class="wrap">
-            <h1 class="visual_title">
+            <h1 class="visual_title fade_in" data-delay="0">
               Game Site / JavaScript
-              <p>2D갤러그 게임</p>
+              <p class="fade_in" data-delay="200">2D갤러그 게임</p>
             </h1>
             <img src="../img/works_img/work_gallagher.png" alt="갤러그게임 홈페이지" />
           </div>
         </div>
-        <div class="contents">
+        <div class="contents fade_in" data-delay="400">
           <div class="wrap">
             <div class="summary">
               <h2>2D고전게임 '갤러그' 게임</h2>
@@ -43,7 +43,7 @@
                 유튜브를 보면서 Vanilla JavaScript로 갤러그 게임을 하드코딩하여 만들었습니다. 다양한 메서드의 활용을 하여 JavaScript의 언어를 배우고 응용할 수 있게 되었습니다. new 키워드를 사용하여 데이터를 불러오고 그 데이터를 render 하였습니다. if 조건문에 keydown 이벤트를 사용해 키를 눌렀을 때
                 이미지를 그리는 효과를 구현하였습니다. JavaScript의 로직을 이해하고 경험할 수 있었던 좋은 경험이었습니다.
               </p>
-              <a href="website/gallagher/index.html">웹사이트 바로가기</a>
+              <a href="website/gallagher/index.html" target="_blank">웹사이트 바로가기</a>
             </div>
             <div class="project">
               <ul>
@@ -66,12 +66,12 @@
         <div class="contents_img">
           <div class="wrap">
             <div>
-              <img src="../img/works_img/content_gallagher01.png" alt="갤러그게임 홈페이지" class="pc_img" />
+              <img src="../img/works_img/content_gallagher01.png" alt="갤러그게임 홈페이지" class="pc_img fade_in" data-delay="0" />
             </div>
           </div>
         </div>
         <div class="section_more_btn">
-          <button class="btn_wrap">
+          <button class="btn_wrap fade_in" data-delay="0">
             <p>BACK TO TOP. <span class="top_ico">↑</span></p>
           </button>
         </div>

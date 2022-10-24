@@ -11,7 +11,7 @@
     <script>
       window.PORTFOLIO_PAGE = "work";
     </script>
-    <script src="../index.js"></script>
+    <script defer src="../index.js"></script>
   </head>
   <body>
     <header>
@@ -28,14 +28,14 @@
       <section class="tetris">
         <div class="visual">
           <div class="wrap">
-            <h1 class="visual_title">
+            <h1 class="visual_title fade_in" data-delay="0">
               Game Site / JavaScript
-              <p>2D테트리스 게임</p>
+              <p class="fade_in" data-delay="200">2D테트리스 게임</p>
             </h1>
             <img src="../img/works_img/work_tetris.png" alt="테트리스 홈페이지" />
           </div>
         </div>
-        <div class="contents">
+        <div class="contents fade_in" data-delay="400">
           <div class="wrap">
             <div class="summary">
               <h2>2D고전게임 '테트리스' 게임</h2>
@@ -43,7 +43,7 @@
                 유튜브를 보면서 Vanilla JavaScript로 갤러그 게임을 하드코딩하여 만들었습니다. ul 자식 li를 createElement를 사용해 만들어 그리드를 만들었고 전개 연산자를 사용해 movingitem에 위치를 알 수 있었습니다. setInterval을 통해 콘텐츠에 속도를 제어하고 switch 문을 사용하여 keydown 이벤트를
                 사용하여 방향 키와 스페이스바 키를 제어할 수 있었습니다. 다양한 JavaScript 로직을 접해 보았으며 다른 프로젝트에 응용하여 사용할 수 있습니다.
               </p>
-              <a href="website/tetris/index.html">웹사이트 바로가기</a>
+              <a href="website/tetris/index.html target="_blank"">웹사이트 바로가기</a>
             </div>
             <div class="project">
               <ul>
@@ -66,12 +66,12 @@
         <div class="contents_img">
           <div class="wrap">
             <div>
-              <img src="../img/works_img/content_tetris01.png" alt="테트리스 홈페이지" class="pc_img" />
+              <img src="../img/works_img/content_tetris01.png" alt="테트리스 홈페이지" class="pc_img fade_in" data-delay="0" />
             </div>
           </div>
         </div>
         <div class="section_more_btn">
-          <button class="btn_wrap">
+          <button class="btn_wrap fade_in" data-delay="0">
             <p>BACK TO TOP. <span class="top_ico">↑</span></p>
           </button>
         </div>

@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /***************************** reset */
+
 * {
   margin: 0;
   padding: 0;
@@ -242,4 +243,19 @@ footer .copy {
   text-align: center;
   font-size: 14px;
   color: #666;
+}
+
+/***************************** animation */
+@keyframes boxAnimate {
+  0% {
+    opacity: 0;
+    transform: translate(0, 110px);
+  }
+  100% {
+    transform: rotate(0, 0);
+    opacity: 1;
+  }
+}
+.fade_in {
+  opacity: 0;
 }
