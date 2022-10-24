@@ -788,6 +788,7 @@ main .main_banner_wrap .banner:hover .ban_more {
   }
 
   header nav .gnb_bg {
+    display: none;
     height: 70px;
     position: absolute;
     left: 0;

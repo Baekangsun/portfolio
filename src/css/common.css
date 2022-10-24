@@ -1,26 +1,9 @@
-/***************************** fonts  */
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:wght@100;300;400;500;700;900&display=swap");
-
-/***************************** reset */
-
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  list-style: none;
-  color: inherit;
-  text-decoration: none;
-  font-family: "Noto Sans KR", "Roboto", sans-serif;
-}
-
 /***************************** common */
 html,
 body {
   background: #313131;
   overflow-x: hidden;
+  font-family: "Noto Sans KR", "Roboto", sans-serif;
 }
 
 /***************************** color */

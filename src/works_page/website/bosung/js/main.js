@@ -22,7 +22,6 @@ $(function () {
     function () {
       $(this).children(".g2").stop().slideToggle(300);
       $("nav").append('<div class="gnb_bg"></div>');
-      $("header nav .gnb_bg").slideShow();
     },
     function () {
       $(".gnb .g2").hide();
