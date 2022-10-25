@@ -103,16 +103,16 @@ const BLOCKS = {
   ],
   zeeRight: [
     [
-      [0, 1],
-      [1, 0],
-      [1, 1],
+      [3, 0],
+      [2, 1],
       [2, 0],
+      [1, 1],
     ],
     [
-      [0, 1],
       [1, 0],
       [1, 1],
-      [0, 2],
+      [2, 1],
+      [2, 2],
     ],
     [
       [0, 2],
@@ -121,8 +121,8 @@ const BLOCKS = {
       [2, 1],
     ],
     [
-      [2, 0],
-      [2, 1],
+      [0, 0],
+      [0, 1],
       [1, 1],
       [1, 2],
     ],
@@ -207,12 +207,12 @@ const BLOCKS = {
   ],
 };
 
-function blockSpeedLevel(level, speed) {
+function blockSpeedLevel(level, duration) {
   level.addEventListener("click", function () {
     clearInterval(downInterval);
     downInterval = setInterval(() => {
       moveBlock("top", 1);
-    }, speed);
+    }, duration);
   });
 }
 blockSpeedLevel(eazyLevel, 500);

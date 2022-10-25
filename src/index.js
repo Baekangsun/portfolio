@@ -69,12 +69,12 @@ function parallaxMouseMove() {
 
 function aboutMeScrollBerak() {
   if (windowY > 700) {
-    aboutMeEl.style.width = 100 + "%";
-    worksEl.style.width = 100 + "%";
+    aboutMeEl.style.width = windowW;
+    worksEl.style.width = windowW;
   }
 }
 
-function aboutMeScrollEvent() {
+function aboutMeScrollEvent(windowW) {
   if (windowY > 0) {
     aboutMeEl.style.width = windowY + 1100 + "px";
     worksEl.style.width = windowY + 1100 + "px";
@@ -84,29 +84,24 @@ function aboutMeScrollEvent() {
     }
   }
 }
+
 function workMoreEvent() {
-  const worksMoreBtn = document.querySelector(".works .section_more_btn .btn_wrap");
-  const project = document.querySelectorAll(".works .project_wrap");
+  const worksMoreBtn = document.querySelector(".works .works_more_btn .works_btn_wrap");
+  const projectEls = document.querySelectorAll(".works .project_wrap .project");
 
   worksMoreBtn.addEventListener("click", () => {
-    const noneItem = [];
-    project.forEach(function (el) {
-      const projectDisplay = getComputedStyle(el).display;
-      if (projectDisplay === "none") {
-        noneItem.push(el);
-      }
-    });
-    if (noneItem.length > 0) {
-      noneItem[0].style.display = "block";
-      if (noneItem.length === 1) {
-        worksMoreBtn.style.display = "none";
-      }
+    const noneItem = Array.from(projectEls).filter((el) => getComputedStyle(el).display === "none");
+    if (noneItem.length < 4) {
+      worksMoreBtn.style.display = "none";
     }
+    noneItem.slice(0, 4).forEach((el, index) => {
+      el.style.display = "block";
+    });
   });
 }
 
 function topOfPage() {
-  const scrollTopBtn = document.querySelector("section .section_more_btn");
+  const scrollTopBtn = document.querySelector("section .work_gotop_btn");
   scrollTopBtn.addEventListener("click", () => {
     window.scrollTo({
       top: 0,
@@ -126,6 +121,7 @@ skillBarEl.forEach((el) => {
     }
   });
 });
+
 function fadeInActionEvent() {
   const fadeInEls = document.querySelectorAll(".fade_in");
   fadeInEls.forEach((fadeInEl) => {
@@ -152,6 +148,7 @@ function fadeInActionEvent() {
 }
 
 ////////////////////////////////////////////////////////////// commen
+gnbColorChange();
 window.addEventListener("scroll", function () {
   gnbColorChange(); //상단 header 메뉴 color 변경
 });
@@ -162,9 +159,13 @@ switch (window.PORTFOLIO_PAGE) {
   ////////////////////////////////////////////////////////////// main
   case "main":
     workMoreEvent(); // work 더보기 기능
-    aboutMeScrollBerak();
+    aboutMeScrollBerak(); // about 배경 인터렉션 이벤트 Berak
+
+    window.addEventListener("resize", function () {
+      aboutMeScrollEvent(window.innerWidth);
+    });
     window.addEventListener("scroll", function () {
-      aboutMeScrollEvent(); // about 배경 인터렉션 이벤트
+      aboutMeScrollEvent(window.innerWidth); // about 배경 인터렉션 이벤트
       gnbStyleChange(); // 상단 gnb active style 변경
     });
     break;

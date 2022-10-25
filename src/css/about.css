@@ -322,3 +322,6 @@
   width: 80%;
   background: #f4c167;
 }
+.section_more_btn .btn_wrap p .plus {
+  padding-left: 36px;
+}
