@@ -290,7 +290,7 @@ header .gnb a.active:after {
 /***************************** btn */
 .work_gotop_btn {
   display: block;
-  width: 230px;
+  width: 190px;
   margin: 150px auto;
 }
 
@@ -313,13 +313,13 @@ header .gnb a.active:after {
   background-color: #f1f1f1;
   position: absolute;
   top: 0;
-  left: -178px;
+  left: -140px;
   z-index: -1;
   transition: 0.5s cubic-bezier(0.55, 0.3, 0, 0.99);
 }
 
 .work_gotop_btn .gotop_btn_wrap:hover:after {
-  left: 178px;
+  left: 140px;
 }
 
 .work_gotop_btn .gotop_btn_wrap button {
@@ -331,7 +331,7 @@ header .gnb a.active:after {
 }
 
 .work_gotop_btn .gotop_btn_wrap button .top_ico {
-  padding-left: 76px;
+  padding-left: 37px;
 }
 
 /***************************** footer*/
