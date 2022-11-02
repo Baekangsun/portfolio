@@ -872,14 +872,6 @@ footer .corp_info address span {
     font-size: 18px;
   }
 
-  /*
-    2뎁스 ul의 부모인 div.depth_wrap(1뎁스 li의 자손)은 가로전체 배경으로는 사용할 수 없음.
-  
-    첫째 메뉴(제품소개)는 2뎁스가 부모 li이 기준이 아니고, 전체 행 기준으로 변경해야 하고,
-    2뎁스 ul 동생인 div.find_solution을 ul.g2 아래 배치해야 하므로
-    div.depth_wrap을 포지션 할꺼임
-  */
-
   header #gnb > li:first-child {
     position: static;
   }
