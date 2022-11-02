@@ -243,6 +243,13 @@ header .gnb a.active:after {
   padding: 200px 0 100px 0;
   background: #eee;
 }
+.gallagher .contents_img {
+  padding: 120px 0 100px 0;
+}
+
+.calculator .contents_img {
+  padding: 0;
+}
 .contents_img .wrap {
   position: relative;
 }
@@ -259,6 +266,10 @@ header .gnb a.active:after {
   width: 100%;
   height: 1000px;
 }
+.tetris .contents_img iframe {
+  height: 880px;
+}
+
 .contents_img .pc_img {
   width: 100%;
   margin-bottom: 150px;
