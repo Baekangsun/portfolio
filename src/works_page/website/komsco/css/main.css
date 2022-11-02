@@ -8,7 +8,7 @@
 body {
   font-size: 15px;
   color: #666;
-  font-family: 'Roboto', 'Noto Sans KR', '맑은 고딕', sans-serif;
+  font-family: "Roboto", "Noto Sans KR", "맑은 고딕", sans-serif;
 }
 
 button {
@@ -17,7 +17,7 @@ button {
   line-height: 1;
   padding: 0;
   margin: 0;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .container {
@@ -39,7 +39,7 @@ button {
 }
 
 .focus_txt_2 {
-  color: #d4ad26
+  color: #d4ad26;
 }
 
 .blank_ico:after {
@@ -56,7 +56,7 @@ button {
   top: -50px;
   padding: 15px 20px;
   background: #000;
-  color: #FFF;
+  color: #fff;
 }
 
 .skip_nav a:focus {
@@ -74,7 +74,7 @@ button {
   overflow: hidden;
   background: #665d53;
   text-align: center;
-  color: #FFF;
+  color: #fff;
 }
 
 .popup ul {
@@ -137,7 +137,7 @@ button {
 }
 
 .popup .controls button.on {
-  background: #FFF;
+  background: #fff;
 }
 
 .popup .controls .play {
@@ -203,7 +203,7 @@ header .header_util {
 
 header .header_util .login {
   display: block;
-  color: #FFF;
+  color: #fff;
   float: left;
   font-size: 12px;
   line-height: 80px;
@@ -212,34 +212,34 @@ header .header_util .login {
 
 @keyframes popup1 {
   0% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   100% {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
 }
 
 @keyframes popup2 {
   0% {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
 
   100% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 }
 
 header .header_util .popup_btn {
   float: left;
-  color: #FFF;
+  color: #fff;
   font-size: 12px;
   line-height: 80px;
 }
 
 header .header_util .popup_btn img {
   margin-left: 5px;
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 header .header_util .search_wrap {
@@ -268,7 +268,7 @@ header .header_util .search_wrap .search_box form {
   width: 700px;
   margin: auto;
   padding: 40px;
-  background: #FFF;
+  background: #fff;
   text-align: center;
 }
 
@@ -288,7 +288,7 @@ header .header_util .search_wrap .search_box input[type="image"] {
 }
 
 header .header_util .search_wrap .search_box .close_btn {
-  background: #FFF;
+  background: #fff;
   padding: 10px;
   position: absolute;
   top: 140px;
@@ -315,31 +315,30 @@ header .header_util .allmenu_wrap .allmenu_box {
   top: 0;
   bottom: 0;
   overflow: auto;
-  background: #FFF;
+  background: #fff;
   z-index: 999;
 }
 
 header .header_util .allmenu_wrap .allmenu_box .a1 {
   overflow: hidden;
   margin-bottom: 70px;
-  color: #333
+  color: #333;
 }
 
-
-header .header_util .allmenu_wrap .allmenu_box .a1>li>a {
+header .header_util .allmenu_wrap .allmenu_box .a1 > li > a {
   font-weight: 600;
 }
 
-header .header_util .allmenu_wrap .allmenu_box .a2>li>a {
+header .header_util .allmenu_wrap .allmenu_box .a2 > li > a {
   font-size: 18px;
 }
 
 header .header_util .allmenu_wrap .allmenu_box .a3 {
   font-size: 14px;
-  color: #666
+  color: #666;
 }
 
-header .header_util .allmenu_wrap .allmenu_box .a3>li {
+header .header_util .allmenu_wrap .allmenu_box .a3 > li {
   line-height: 26px;
 }
 
@@ -347,12 +346,12 @@ header .header_util .allmenu_wrap .side_link {
   overflow: hidden;
 }
 
-header .header_util .allmenu_wrap .side_link>* {
+header .header_util .allmenu_wrap .side_link > * {
   display: block;
 }
 
 header .header_util .allmenu_wrap .side_link span {
-  color: #333
+  color: #333;
 }
 
 header .header_util .allmenu_wrap .side_link a {
@@ -380,21 +379,21 @@ header .gnb {
   margin-left: 45px;
 }
 
-header .gnb .g1>li {
+header .gnb .g1 > li {
   float: left;
   position: relative;
   z-index: 10;
 }
 
-header .gnb .g1>li>a {
+header .gnb .g1 > li > a {
   display: block;
   margin-right: 75px;
-  color: #FFF;
+  color: #fff;
   line-height: 80px;
   font-size: 20px;
 }
 
-header .gnb .g1>li:last-child>a {
+header .gnb .g1 > li:last-child > a {
   margin-right: 0;
 }
 
@@ -406,22 +405,22 @@ header .gnb .g2 {
   top: 110px;
 }
 
-header .gnb .g2>li {
+header .gnb .g2 > li {
   margin-bottom: 20px;
 }
 
-header .gnb .g2>li>a {
+header .gnb .g2 > li > a {
   font-size: 16px;
-  color: #333
+  color: #333;
 }
 
 header .gnb .g3 {
   margin-top: 10px;
   padding-left: 10px;
-  border-left: 1px solid #CCC;
+  border-left: 1px solid #ccc;
   font-size: 14px;
   line-height: 24px;
-  color: #666
+  color: #666;
 }
 
 header:after {
@@ -432,7 +431,7 @@ header:after {
   right: 0;
   top: 80px;
   height: 400px;
-  background: #EEE;
+  background: #eee;
 }
 
 /*footer*/
@@ -502,10 +501,6 @@ footer .relative_site_wrap .family_site button {
   box-sizing: border-box;
 }
 
-/*
-footer .corp_info_wrap .family_site button의 아이콘은 자바스크립트 애니메이션이 없다면 :after 가상 클래스로 작성 가능
-자바스크립트 클릭 이벤트에서 가상요소 제어가 힘들기 때문에 html 요소로 생성
-*/
 footer .relative_site_wrap .family_site button img {
   float: right;
   margin-right: 15px;
@@ -591,11 +586,11 @@ main .main_nav li:last-child:after {
 }
 
 main .main_nav li:hover {
-  color: #FFF;
+  color: #fff;
 }
 
 main .main_nav li:hover span {
-  background: #FFF;
+  background: #fff;
 }
 
 main section {
@@ -617,18 +612,16 @@ main .visual_wrap {
   padding: 0;
   position: relative;
 }
-
-main .visual_wrap figure img {
+main .visual_wrap .visual_swiper {
+  width: 100%;
   position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  height: 110%;
-  opacity: 0;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 
-main .visual_wrap figure img.vis_on {
-  opacity: 1;
+main .visual_wrap .visual_swiper .swiper-slide img {
+  height: 100vh;
 }
 
 main .visual_wrap .visual_txt {
@@ -637,7 +630,7 @@ main .visual_wrap .visual_txt {
   right: 0;
   top: 0;
   bottom: 0;
-  color: #FFF;
+  color: #fff;
 }
 
 main .visual_wrap .visual_txt .slogan {
@@ -651,7 +644,7 @@ main .visual_wrap .visual_txt .slogan {
 main .visual_wrap .visual_txt .slogan strong {
   display: inline-block;
   padding: 14px 16px;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   font-size: 24px;
 }
 
@@ -678,34 +671,18 @@ main .visual_wrap .visual_txt a img {
   margin: 0 0 1px 6px;
 }
 
-main .visual_wrap .visual_txt .pagination {
+main .visual_wrap .visual_txt .swiper-pagination {
+  width: 60px;
   position: absolute;
+  left: inherit;
   right: calc(50% - 600px);
   bottom: 60px;
-}
-
-main .visual_wrap .visual_txt .pagination span {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-main .visual_wrap .visual_txt .pagination .current {
-  font-size: 23px;
-}
-
-main .visual_wrap .visual_txt .pagination .current:after {
-  content: "";
-  display: inline-block;
-  width: 1px;
-  height: 12px;
-  margin: 5px 4px 0 6px;
-  background: #AAA;
-  vertical-align: top;
-}
-
-main .visual_wrap .visual_txt .pagination .total {
   font-size: 16px;
-  color: #CCC
+  color: #bbb;
+}
+main .visual_wrap .visual_txt .swiper-pagination .swiper-pagination-current {
+  font-size: 23px;
+  color: #fff;
 }
 
 main .visual_wrap .visual_txt .control {
@@ -731,7 +708,6 @@ main .visual_wrap .visual_txt .control .play {
   display: none;
 }
 
-
 main .exhibit_wrap {
   background: url(../img/section2_bg.jpg);
 }
@@ -751,8 +727,8 @@ main .exhibit_wrap li {
   top: 0;
 }
 
-main .exhibit_wrap li.on {
-  display: block;
+main .exhibit_wrap li:first-child {
+  display: list-item;
 }
 
 main .exhibit_wrap li .exhi_img {
@@ -799,7 +775,7 @@ main .exhibit_wrap li .sort {
   top: 0;
   line-height: 36px;
   background: #b61010;
-  color: #FFF;
+  color: #fff;
   border-radius: 18px;
 }
 
@@ -811,7 +787,7 @@ main .exhibit_wrap li span[class*="state"] {
   right: 20px;
   top: 0;
   text-align: center;
-  color: #FFF;
+  color: #fff;
 }
 
 main .exhibit_wrap li .state_ing {
@@ -819,7 +795,7 @@ main .exhibit_wrap li .state_ing {
 }
 
 main .exhibit_wrap li .state_end {
-  background: rgba(0, 0, 0, .6);
+  background: rgba(0, 0, 0, 0.6);
 }
 
 main .exhibit_wrap .control {
@@ -831,7 +807,7 @@ main .exhibit_wrap .control .dot {
   height: 12px;
   border-radius: 50%;
   margin: 0 2px;
-  background: #CCC;
+  background: #ccc;
 }
 
 main .exhibit_wrap .control .on {
@@ -843,10 +819,13 @@ main .exhibit_wrap .control .play {
 }
 
 main .standing_wrap {
-  background: url(../img/section_3_exhi_1_bg2.jpg);
-  color: #FFF;
+  background-image: url(../img/section_3_exhi_1_bg2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  transition: 0.8s;
 }
-
 main .standing_wrap li {
   float: left;
   width: calc(25% - 18px);
@@ -857,28 +836,72 @@ main .standing_wrap li:last-child {
   margin-right: 0;
 }
 
-main .standing_wrap li * {
+main .standing_wrap li {
   display: block;
   text-align: center;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+main .standing_wrap li:after {
+  content: "";
+  display: block;
+  width: 120%;
+  height: 120%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+main .standing_wrap li:nth-child(1):after {
+  background-image: url(../img/section_3_exhi_bg.jpg);
+}
+
+main .standing_wrap li:nth-child(2):after {
+  background-image: url(../img/section_3_exhi_2_bg.jpg);
+}
+main .standing_wrap li:nth-child(3):after {
+  background-image: url(../img/section_3_exhi_3_bg.jpg);
+}
+
+main .standing_wrap li:nth-child(4):after {
+  background-image: url(../img/section_3_exhi_4_bg.jpg);
+}
+
+main .standing_wrap li.hover:after {
+  width: 100%;
+  height: 100%;
+  transition: 0.8s;
+  opacity: 1;
 }
 
 main .standing_wrap li a {
-  padding: 70px 0 60px 0;
-  border: 1px solid #FFF;
+  display: block;
+  padding: 50px 0;
+  border: 1px solid #fff;
 }
 
 main .standing_wrap li strong {
+  display: block;
   margin-bottom: 20px;
   font-size: 24px;
   font-weight: bold;
 }
 
 main .standing_wrap li em {
+  display: block;
   margin-bottom: 40px;
   font-size: 16px;
 }
 
 main .standing_wrap li span {
+  display: block;
   width: 54px;
   height: 54px;
   margin: auto;
@@ -899,24 +922,7 @@ main .standing_wrap li:nth-child(3) span {
 main .standing_wrap li:nth-child(4) span {
   background: url(../img/section_3_exhi_4_more.png);
 }
-
-main .standing_wrap li:nth-child(1):hover {
-  background: url(../img/section_3_exhi_bg.jpg);
-}
-
-main .standing_wrap li:nth-child(2):hover {
-  background: url(../img/section_3_exhi_2_bg.jpg);
-}
-
-main .standing_wrap li:nth-child(3):hover {
-  background: url(../img/section_3_exhi_3_bg.jpg);
-}
-
-main .standing_wrap li:nth-child(4):hover {
-  background: url(../img/section_3_exhi_4_bg.jpg);
-}
-
-main .standing_wrap li:hover span {
+main .standing_wrap li.hover span {
   background: url(../img/section_3_exhi_more_on.png);
 }
 
@@ -960,7 +966,6 @@ main .museum_info_wrap .con_box .more {
   top: 0;
 }
 
-
 main .museum_info_wrap .cont1 .banner {
   float: left;
   margin-bottom: 65px;
@@ -968,6 +973,9 @@ main .museum_info_wrap .cont1 .banner {
   position: relative;
 }
 
+main .museum_info_wrap .cont1 .banner .slider {
+  z-index: 0;
+}
 
 main .museum_info_wrap .cont1 .banner .slider a {
   display: block;
@@ -981,7 +989,6 @@ main .museum_info_wrap .cont1 .banner .slider a.ban1 {
 
 main .museum_info_wrap .cont1 .banner .slider a.ban2 {
   background: url(../img/banner_2.jpg) center;
-  display: none;
 }
 
 main .museum_info_wrap .cont1 .banner .control {
@@ -991,7 +998,8 @@ main .museum_info_wrap .cont1 .banner .control {
   right: 0;
   top: 0;
   background: rgba(0, 0, 0, 0.6);
-  color: #FFF;
+  color: #fff;
+  z-index: 1;
 }
 
 main .museum_info_wrap .cont1 .banner .control .btns {
@@ -1010,7 +1018,7 @@ main .museum_info_wrap .cont1 .banner .control .btns .prev {
 
 main .museum_info_wrap .cont1 .banner .control .btns .next {
   background: url(../img/popupzone_control_arrow.png) no-repeat center;
-  transform: rotate(180deg)
+  transform: rotate(180deg);
 }
 
 main .museum_info_wrap .cont1 .banner .control .btns .play {
@@ -1023,11 +1031,9 @@ main .museum_info_wrap .cont1 .banner .control .btns .stop {
 }
 
 main .museum_info_wrap .cont1 .banner .control .pagination {
-  float: right;
-}
-
-main .museum_info_wrap .cont1 .banner .control .pagination span {
-  display: inline-block;
+  left: initial;
+  right: 15px;
+  width: auto;
 }
 
 main .museum_info_wrap .cont1 .banner .control .pagination .current:after {
@@ -1036,12 +1042,12 @@ main .museum_info_wrap .cont1 .banner .control .pagination .current:after {
   width: 1px;
   height: 10px;
   margin: 0 5px;
-  background: #CCC;
+  background: #ccc;
 }
 
 main .museum_info_wrap .cont1 .vr {
   float: right;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
@@ -1055,12 +1061,11 @@ main .museum_info_wrap .cont1 .vr h3 {
   display: inline-block;
   margin: 50px 0 20px 0;
   padding: 8px 24px;
-  color: #FFF;
-  border: 1px solid #FFF;
+  color: #fff;
+  border: 1px solid #fff;
   font-size: 16px;
   line-height: 1;
 }
-
 
 main .museum_info_wrap .cont2 dl {
   padding: 12px 0;
@@ -1082,7 +1087,7 @@ main .museum_info_wrap .cont2 dt:after {
   height: 14px;
   float: right;
   margin-top: 11px;
-  background: #CCC
+  background: #ccc;
 }
 
 main .museum_info_wrap .cont2 dd {
@@ -1124,7 +1129,7 @@ main .museum_info_wrap .con_box .question .link_btns a {
   margin-right: 8px;
   padding: 12px 0;
   background: #636363;
-  color: #FFF;
+  color: #fff;
   text-align: center;
 }
 
@@ -1155,7 +1160,6 @@ main .museum_info_wrap .news li span {
   float: right;
 }
 
-
 /*PC*/
 @media screen and (min-width: 1340px) {
   .container {
@@ -1167,18 +1171,17 @@ main .museum_info_wrap .news li span {
     padding: 130px calc((100% - 1200px) / 2);
   }
 
-
-  header .header_util .allmenu_wrap .allmenu_box .a1>li {
+  header .header_util .allmenu_wrap .allmenu_box .a1 > li {
     float: left;
     width: 200px;
     margin-right: 40px;
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a1>li:last-child {
+  header .header_util .allmenu_wrap .allmenu_box .a1 > li:last-child {
     margin-right: 0;
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a1>li>a {
+  header .header_util .allmenu_wrap .allmenu_box .a1 > li > a {
     font-size: 30px;
   }
 
@@ -1187,7 +1190,7 @@ main .museum_info_wrap .news li span {
     border-top: 1px solid #636363;
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a2>li {
+  header .header_util .allmenu_wrap .allmenu_box .a2 > li {
     margin-top: 28px;
   }
 
@@ -1198,7 +1201,7 @@ main .museum_info_wrap .news li span {
     border-left: 1px solid #acacac;
   }
 
-  header .header_util .allmenu_wrap .side_link>* {
+  header .header_util .allmenu_wrap .side_link > * {
     float: left;
     width: 400px;
     line-height: 70px;
@@ -1281,18 +1284,16 @@ main .museum_info_wrap .news li span {
     float: right;
     width: 760px;
   }
-
 }
 
 /*@pc*/
 
 /*Tablet*/
 @media screen and (max-width: 1339px) {
-
   header .gnb,
   header .header_util .login,
   .main_nav,
-  main .visual_wrap .visual_txt .pagination {
+  main .visual_wrap .visual_txt .swiper-pagination {
     display: none;
   }
 
@@ -1307,7 +1308,7 @@ main .museum_info_wrap .news li span {
   }
 
   .popup .today_check {
-    right: calc(5% - 20px)
+    right: calc(5% - 20px);
   }
 
   header .header_util .login {
@@ -1349,7 +1350,7 @@ main .museum_info_wrap .news li span {
     display: block;
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a1>li>a {
+  header .header_util .allmenu_wrap .allmenu_box .a1 > li > a {
     padding: 15px 20px;
     border-bottom: 1px solid #d2d2d2;
     font-size: 16px;
@@ -1362,17 +1363,17 @@ main .museum_info_wrap .news li span {
     border-bottom: 1px solid #d2d2d2;
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a2>li {
+  header .header_util .allmenu_wrap .allmenu_box .a2 > li {
     border-top: 1px solid #fefefe;
     border-bottom: 1px solid #dedede;
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a2>li>a {
+  header .header_util .allmenu_wrap .allmenu_box .a2 > li > a {
     padding: 15px 0;
     font-size: 15px;
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a2>li:last-child {
+  header .header_util .allmenu_wrap .allmenu_box .a2 > li:last-child {
     border-bottom: none;
   }
 
@@ -1380,7 +1381,7 @@ main .museum_info_wrap .news li span {
     display: none;
   }
 
-  header .header_util .allmenu_wrap .allmenu_box .a3>li>a:before {
+  header .header_util .allmenu_wrap .allmenu_box .a3 > li > a:before {
     content: "";
     display: inline-block;
     width: 3px;
@@ -1396,49 +1397,49 @@ main .museum_info_wrap .news li span {
   }
 
   /*모바일 아코디언메뉴의 +, - 기호 만들기*/
-  .allmenu_box li>a {
+  .allmenu_box li > a {
     position: relative;
   }
 
-  .allmenu_box .dep1>a:before,
-  .allmenu_box .dep1>a:after {
+  .allmenu_box .dep1 > a:before,
+  .allmenu_box .dep1 > a:after {
     content: "";
     display: block;
     position: absolute;
-    background: #CCC;
+    background: #ccc;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
   }
 
-  .allmenu_box .dep1>a:before {
+  .allmenu_box .dep1 > a:before {
     width: 18px;
     height: 2px;
     right: 5%;
   }
 
-  .allmenu_box .dep1>a:after {
+  .allmenu_box .dep1 > a:after {
     width: 2px;
     height: 18px;
     right: calc(5% + 8px);
   }
 
-  .allmenu_box .dep2>a:before,
-  .allmenu_box .dep2>a:after {
+  .allmenu_box .dep2 > a:before,
+  .allmenu_box .dep2 > a:after {
     content: "";
     display: block;
     position: absolute;
-    background: #CCC;
+    background: #ccc;
     top: 50%;
-    transform: translateY(-50%)
+    transform: translateY(-50%);
   }
 
-  .allmenu_box .dep2>a:before {
+  .allmenu_box .dep2 > a:before {
     width: 16px;
     height: 2px;
     right: 6px;
   }
 
-  .allmenu_box .dep2>a:after {
+  .allmenu_box .dep2 > a:after {
     width: 2px;
     height: 16px;
     right: 13px;
@@ -1487,7 +1488,7 @@ main .museum_info_wrap .news li span {
     font-size: 50px;
   }
 
-  main .visual_wrap .visual_txt .pagination main .exhibit_wrap li .exhi_txt {
+  main .visual_wrap .visual_txt .swiper-pagination main .exhibit_wrap li .exhi_txt {
     padding: 60px 60px 0 0;
   }
 
@@ -1538,6 +1539,9 @@ main .museum_info_wrap .news li span {
 /*Mobile*/
 @media screen and (max-width: 720px) {
   .popup li .desc {
+    display: none;
+  }
+  .popup .controls {
     display: none;
   }
 
@@ -1642,6 +1646,13 @@ main .museum_info_wrap .news li span {
   main .standing_wrap li a {
     padding: 40px 0;
   }
+  main .standing_wrap li strong {
+    font-size: 18px;
+    margin-bottom: 7px;
+  }
+  main .standing_wrap li em {
+    margin-bottom: 14px;
+  }
 
   /*관람안내 및 소식*/
   main .museum_info_wrap .cont1 .banner {
@@ -1670,7 +1681,6 @@ main .museum_info_wrap .news li span {
     margin-bottom: 65px;
     width: auto;
   }
-
 }
 
 /*@mob*/
